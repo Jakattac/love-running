@@ -233,7 +233,7 @@ footer {
     text-align: center;
 }
 
-.social-networks > li {
+.social-networks>li {
     display: inline;
 }
 
@@ -253,11 +253,13 @@ footer {
     column-gap: 0;
 }
 
-#photos > img {
+#photos>img {
     width: 100%;
 }
 
 /* Media queries */
+
+/* for screens under 1200px*/
 
 @media screen and (max-width: 1200px) {
     #club-ethos {
@@ -265,12 +267,14 @@ footer {
         height: 1200px;
         margin: 0 auto;
     }
+
     #welcome {
         padding: 30px 0;
         margin: 0;
     }
 
-    #left-about, #right-about {
+    #left-about,
+    #right-about {
         width: 100%;
         float: left;
         padding: 0;
@@ -285,5 +289,17 @@ footer {
 
     hr {
         display: none;
+    }
+}
+
+/* for medium screen sizes from 950px wide and down*/
+@media screen and (max-width: 950px) {
+
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
     }
 }
